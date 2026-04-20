@@ -1,3 +1,4 @@
 # python
-teste com meus aprendizados
+teste com meus aprendizados do curso do Gustavo Guanabara e da Hashtag
+
 
