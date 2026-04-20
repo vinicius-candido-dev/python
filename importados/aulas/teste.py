@@ -1,0 +1,1 @@
+print ( '\nhello word' * 5)

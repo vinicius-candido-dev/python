@@ -1,0 +1,5 @@
+vini: 17
+Angelo: 16
+shidori: 12
+kaori: 14
+vini: 17
