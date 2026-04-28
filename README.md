@@ -1,2 +1,2 @@
-# Estudo HTML e CSS
-Estudo HTML e CSS Diante dos meus aprendizados com cursos que estou fazendo com Gustavo Guanabara e com os videos da Rafaela Ballerini irei postar aqui, nada muito complexo por enquanto
+# Estudos sobre Python
+teste com meus aprendizados do curso do Gustavo Guanabara e da Hashtag. Nesses programas tem algumas brincadeiras para meu aprendizado.
