@@ -1,6 +1,6 @@
 #Declaração d classe
 class Vini:
-    def __init__(self, nome, idade): #Método-construtor
+    def __init__(self): #Método-construtor
         #atributo de instancia
         self.nome = ''
         self.idade = 0
@@ -17,4 +17,6 @@ class Vini:
 
 # Declaração de objeto
 g1 = Vini()
+g1.nome = 'Maria'
+g1.idade = 20
 print(g1.msg())
