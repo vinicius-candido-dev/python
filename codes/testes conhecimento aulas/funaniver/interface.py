@@ -1,13 +1,10 @@
-from ex115 import arquivo
-from função import *
-from tela import *
-arq = 'birthdays.txt'
-if not arquivoExiste(arq):
-    criararg(arq)
-while True:
-    interface('TEM ANIVÉRSARIO?')
-    escolha = menu('informe um número  ')
-    if escolha == 1:
-        lerArq(arq)
+import função
+# se existe, ,,,
+    #função.existe("birthdays.txt")
 
-    break
+#tela
+#todas as datas
+#verificar as datas pra o dia
+#se é pra adicionar
+função.add(7,9,"Papai")
+função.all()

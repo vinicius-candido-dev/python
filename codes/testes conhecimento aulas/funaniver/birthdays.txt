@@ -1,4 +1,6 @@
-1;4;'MaMae'
-1;14;'Vitória'
-5;1;'Paulo Junior'
-6:26;'Marina'
+1,4,MaMae
+1,14,Vitória
+5,1,Paulo Junior
+6,26,Marina
+11,12,Caroliny
+7,9,Papai
