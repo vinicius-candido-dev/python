@@ -7,7 +7,7 @@ def existe(arquive):
     """
     from os import path
     if path.exists(arquive):
-        print("existe")
+        return "existe"
         pass
     else:
         try:
