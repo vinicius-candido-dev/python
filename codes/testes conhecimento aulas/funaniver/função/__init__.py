@@ -36,7 +36,44 @@ def all():
 
 #verificar as datas pra o dia
 def aniversario_hoje():
+    from datetime import date
+    hoje = date.today()
+    day = str(hoje.day)
+    month = str(hoje.month)
 
+    with open("birthdays.txt", "r", encoding="UTF-8") as arquivo:
+        for linha in arquivo:
+            linha = linha.strip()
+            partes = linha.split(',')
 
+            if len(partes) == 3:
+                dia = partes[0]
+                mes = partes[1]
+                nome = partes[2]
+
+            if day == dia and mes == month:
+                print(f"O aniversário de {nome} é hoje")
+        if not day == dia:
+            print("Ninguém faz aniversário nesse dia.")
+
+#especificar data
+def especificar(day, month):
+    day = str(day)
+    month = str(month)
+    with open("birthdays.txt", "r", encoding="UTF-8") as arquivo:
+        for linha in arquivo:
+            linha = linha.strip()
+            partes = linha.split(',')
+
+            if len(partes) == 3:
+                dia = partes[0]
+                mes = partes[1]
+                nome = partes[2]
+
+            if day == dia and mes == month:
+                print(f"O aniversário de {nome} é hoje")
+
+        if not day == dia and month == mes:
+            print("Ninguém faz aniversário nesse dia.")
 
 

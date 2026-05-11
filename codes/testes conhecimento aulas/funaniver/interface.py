@@ -3,8 +3,15 @@ import função
     #função.existe("birthdays.txt")
 
 #tela
-#todas as datas
+
 #verificar as datas pra o dia
+#função.aniversario_hoje()
+
 #se é pra adicionar
-função.add(7,9,"Papai")
-função.all()
+#função.add(15,4,"Angelo")
+
+#todas as datas
+#função.all()
+
+#especificar o dia
+#função.especificar(26,6)
