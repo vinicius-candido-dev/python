@@ -1,3 +1,4 @@
+from rich import print
 #existencia
 def existe(arquive):
     """
