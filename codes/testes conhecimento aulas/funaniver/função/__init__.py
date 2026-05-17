@@ -1,4 +1,5 @@
 from rich import print
+from rich.table import Table
 #existencia
 def existe(arquive):
     """
@@ -29,14 +30,21 @@ def add(day, month, person):
 
 
 #todas as datas
-def all():
+'''def all(): #com erro
     try:
-        with open("birthdays.txt", "r", encoding="UTF-8") as arquivo:
-            conteudo = arquivo.read()
-            print(conteudo)
-    except Exception as e:
-        print(f"Erro em {e}")
+        with open("birthdays.txt", 'r', encoding="utf-8") as f:
+            for line in f:
+                lin = line.strip().split(',')
+                obj = {
+                        "day": lin[0],
+                        "month": lin[1],
+                        "name": lin[2]}
 
+                return f'A pessoa {obj["name"]} no mês {obj["month"]} no dia {obj["day"]}'
+
+    except Exception as e:
+        return f"Erro em {e}"
+'''
 
 #verificar as datas pra o dia
 def aniversario_hoje():
@@ -83,3 +91,18 @@ def especificar(day, month):
         return "Ninguém faz aniversário nesse dia."
 
 
+def tabl(nome,mes,dia,):
+    tabela = Table(title='Lista')
+    tabela.add_column('Dia')
+    tabela.add_column('Mês')
+    tabela.add_column("Nome")
+
+    tabela.add_row(nome,mes,dia)
+
+    return tabela
+
+#tabela = tabl('11','1', 'vini')
+#print(tabela)
+
+
+#

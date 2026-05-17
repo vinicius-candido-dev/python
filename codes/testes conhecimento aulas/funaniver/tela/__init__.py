@@ -1,10 +1,13 @@
 #tipo tilulo
+from rich import print
+from rich.traceback import install
+install()
 def lines(line = 30):
     print("-" * line)
 
 def cabeçalho(text, line):
     lines(line)
-    print(f'{text:^{line}}')
+    print(f'[red]{text:^{line}}[/]')
     lines(line)
 
 
@@ -18,5 +21,3 @@ def menu(text, line):
   3 - Ver se caso existe um aniversário hoje
   4 - Especificar a data para ver se existe aniversário
   5 - parar o programa''')
-
-

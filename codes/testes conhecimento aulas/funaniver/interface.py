@@ -1,7 +1,7 @@
 import função
 import tela
 from time import sleep
-
+from rich import print
 
 while True:
     # se existe
@@ -19,7 +19,22 @@ while True:
 
             função.add(day,month,name)
         elif choice == 2:
-            função.all()
+            print()
+            #print(all())
+            try:
+                with open("birthdays.txt", 'r', encoding="utf-8") as f:
+                    for line in f:
+                        lin = line.strip().split(',')
+                        obj = {
+                            "day": lin[0],
+                            "month": lin[1],
+                            "name": lin[2]}
+
+                        print(f'A pessoa {obj["name"]} no mês {obj["month"]} no dia {obj["day"]}')
+
+            except Exception as e:
+                print(f"Erro em {e}")
+
 
         elif choice == 3:
             função.aniversario_hoje()
@@ -34,7 +49,7 @@ while True:
         else:
             print('Por favor, digite numero de 1 a 4')
     except:
-        print( f"Erro, pessoa não adicionada")
+        print( f"Erro, número invalido")
     finally:
         sleep(3)
 
