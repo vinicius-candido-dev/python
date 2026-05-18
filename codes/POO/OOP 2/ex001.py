@@ -6,7 +6,11 @@ class Empty:
         self.pay = pay
         self.email = first + '.' + last + '@company.com'
 
+    def fullname(self):
+        return f'{self.first} {self.last}'
+
 
 pessoa = Empty('vini','maia',5000)
 print(pessoa.email)
 print(pessoa.pay)
+print(pessoa.fullname())
